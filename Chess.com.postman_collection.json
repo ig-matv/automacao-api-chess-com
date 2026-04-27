@@ -1,0 +1,259 @@
+{
+  "info": {
+    "_postman_id": "b5b07796-3cb4-4022-9aeb-d454203fd5fb",
+    "name": "Chess.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51996251",
+    "_collection_link": "https://go.postman.co/collection/51996251-b5b07796-3cb4-4022-9aeb-d454203fd5fb?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Procurar Player",
+      "item": [
+        {
+          "name": "Buscar jogador existente",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.chess.com/pub/player/GMKrikor",
+              "protocol": "https",
+              "host": [
+                "api",
+                "chess",
+                "com"
+              ],
+              "path": [
+                "pub",
+                "player",
+                "GMKrikor"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar jogador inexistente",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.chess.com/pub/player/GMKrikorsfd1r",
+              "protocol": "https",
+              "host": [
+                "api",
+                "chess",
+                "com"
+              ],
+              "path": [
+                "pub",
+                "player",
+                "GMKrikorsfd1r"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar jogador com username vazio",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.chess.com/pub/player/",
+              "protocol": "https",
+              "host": [
+                "api",
+                "chess",
+                "com"
+              ],
+              "path": [
+                "pub",
+                "player",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar jogador com username invalido",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.chess.com/pub/player/%$$$%",
+              "protocol": "https",
+              "host": [
+                "api",
+                "chess",
+                "com"
+              ],
+              "path": [
+                "pub",
+                "player",
+                "%$$$%"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Ver status",
+      "item": [
+        {
+          "name": "Ver Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.chess.com/pub/player/GMKrikor/stats",
+              "protocol": "https",
+              "host": [
+                "api",
+                "chess",
+                "com"
+              ],
+              "path": [
+                "pub",
+                "player",
+                "GMKrikor",
+                "stats"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Username inexistente",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.chess.com/pub/player/GMKrikorasd2as/stats",
+              "protocol": "https",
+              "host": [
+                "api",
+                "chess",
+                "com"
+              ],
+              "path": [
+                "pub",
+                "player",
+                "GMKrikorasd2as",
+                "stats"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Ver games",
+      "item": [
+        {
+          "name": "Ver Games",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.chess.com/pub/player/GMKrikor/games",
+              "protocol": "https",
+              "host": [
+                "api",
+                "chess",
+                "com"
+              ],
+              "path": [
+                "pub",
+                "player",
+                "GMKrikor",
+                "games"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Username inválido",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.chess.com/pub/player/GMKrikoasd2dar/games",
+              "protocol": "https",
+              "host": [
+                "api",
+                "chess",
+                "com"
+              ],
+              "path": [
+                "pub",
+                "player",
+                "GMKrikoasd2dar",
+                "games"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Ver games Archive",
+      "item": [
+        {
+          "name": "Ver Games Archive",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.chess.com/pub/player/GMKrikor/games/archives",
+              "protocol": "https",
+              "host": [
+                "api",
+                "chess",
+                "com"
+              ],
+              "path": [
+                "pub",
+                "player",
+                "GMKrikor",
+                "games",
+                "archives"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Jogador inexistente",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.chess.com/pub/player/GMKriasdasakor/games/archives",
+              "protocol": "https",
+              "host": [
+                "api",
+                "chess",
+                "com"
+              ],
+              "path": [
+                "pub",
+                "player",
+                "GMKriasdasakor",
+                "games",
+                "archives"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
