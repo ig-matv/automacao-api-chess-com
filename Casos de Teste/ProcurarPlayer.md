@@ -2,14 +2,14 @@
  
   ## Scenario: Buscar jogador existente
 
-    Dado que o username "hikaru" existe
+    Dado que o username "GMKrikor" existe
     Quando eu faço GET em "/player/GMKrikor"
     Então o status deve ser 200
     E a resposta deve conter "username" , "player_id" e "league"
 
   ## Scenario: Validar formato da resposta
 
-    Dado que o username "hikaru" existe
+    Dado que o username "GMKrikor" existe
     Quando eu faço GET em "/player/GMKrikor"
     Então o campo "username" deve ser string
     E o campo "followers" deve ser numérico
